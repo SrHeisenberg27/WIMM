@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071090737774BE91ABDB666E /* Pods_WIMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49841F17FD5908A6CE5819EF /* Pods_WIMM.framework */; };
 		928D4A102481493B005A4609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D4A0F2481493B005A4609 /* AppDelegate.swift */; };
 		928D4A122481493B005A4609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D4A112481493B005A4609 /* SceneDelegate.swift */; };
 		928D4A142481493B005A4609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D4A132481493B005A4609 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2955C9738705BDF5BA3DC650 /* Pods-WIMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIMM.release.xcconfig"; path = "Target Support Files/Pods-WIMM/Pods-WIMM.release.xcconfig"; sourceTree = "<group>"; };
+		49841F17FD5908A6CE5819EF /* Pods_WIMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WIMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7DD8C096C31453131D3D11 /* Pods-WIMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WIMM.debug.xcconfig"; path = "Target Support Files/Pods-WIMM/Pods-WIMM.debug.xcconfig"; sourceTree = "<group>"; };
 		928D4A0C2481493B005A4609 /* WIMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928D4A0F2481493B005A4609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		928D4A112481493B005A4609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071090737774BE91ABDB666E /* Pods_WIMM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				928D4A0E2481493B005A4609 /* WIMM */,
 				928D4A0D2481493B005A4609 /* Products */,
+				EAD424F70652FA640E30EC13 /* Pods */,
+				D5B506D80320D8F67B90EAD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,48 @@
 		928D4A0E2481493B005A4609 /* WIMM */ = {
 			isa = PBXGroup;
 			children = (
-				928D4A0F2481493B005A4609 /* AppDelegate.swift */,
-				928D4A112481493B005A4609 /* SceneDelegate.swift */,
+				928D4A2624814B03005A4609 /* GeneralProject */,
 				928D4A132481493B005A4609 /* ViewController.swift */,
 				928D4A152481493B005A4609 /* Main.storyboard */,
-				928D4A182481493C005A4609 /* Assets.xcassets */,
-				928D4A1A2481493C005A4609 /* LaunchScreen.storyboard */,
+				928D4A2324814A41005A4609 /* Utils */,
 				928D4A1D2481493C005A4609 /* Info.plist */,
 			);
 			path = WIMM;
+			sourceTree = "<group>";
+		};
+		928D4A2324814A41005A4609 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				928D4A182481493C005A4609 /* Assets.xcassets */,
+				928D4A1A2481493C005A4609 /* LaunchScreen.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		928D4A2624814B03005A4609 /* GeneralProject */ = {
+			isa = PBXGroup;
+			children = (
+				928D4A0F2481493B005A4609 /* AppDelegate.swift */,
+				928D4A112481493B005A4609 /* SceneDelegate.swift */,
+			);
+			path = GeneralProject;
+			sourceTree = "<group>";
+		};
+		D5B506D80320D8F67B90EAD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49841F17FD5908A6CE5819EF /* Pods_WIMM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD424F70652FA640E30EC13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7DD8C096C31453131D3D11 /* Pods-WIMM.debug.xcconfig */,
+				2955C9738705BDF5BA3DC650 /* Pods-WIMM.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 928D4A202481493C005A4609 /* Build configuration list for PBXNativeTarget "WIMM" */;
 			buildPhases = (
+				07053F1915CD81FBBE1031A0 /* [CP] Check Pods Manifest.lock */,
 				928D4A082481493B005A4609 /* Sources */,
 				928D4A092481493B005A4609 /* Frameworks */,
 				928D4A0A2481493B005A4609 /* Resources */,
@@ -132,6 +173,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07053F1915CD81FBBE1031A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WIMM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		928D4A082481493B005A4609 /* Sources */ = {
@@ -282,6 +348,7 @@
 		};
 		928D4A212481493C005A4609 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7DD8C096C31453131D3D11 /* Pods-WIMM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +361,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AlvaroFerrandez.WIMM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		928D4A222481493C005A4609 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2955C9738705BDF5BA3DC650 /* Pods-WIMM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AlvaroFerrandez.WIMM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
